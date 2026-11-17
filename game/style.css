@@ -1,0 +1,30 @@
+/* VOIDPULSE page frame: the game itself is drawn entirely on the canvas. */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  background: #04050d;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+#stage {
+  width: min(100vw, 160vh);
+  line-height: 0;
+}
+
+canvas#game {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #070818;
+  border: 1px solid #23234d;
+  box-shadow: 0 0 42px rgba(64, 224, 255, 0.16), 0 0 120px rgba(255, 62, 168, 0.10);
+  cursor: crosshair;
+}
